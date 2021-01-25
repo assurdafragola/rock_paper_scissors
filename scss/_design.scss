@@ -1,0 +1,43 @@
+//Style Guide
+
+$widthMobile: 375px;
+$widthDesktop: 1366px;
+
+$gradientScissors: (
+    from: hsl(39, 89%, 49%), 
+    to: hsl(40, 84%, 53%)
+);
+
+$gradientPaper: (
+    from: hsl(230, 89%, 62%), 
+    to: hsl(230, 89%, 65%)
+);
+
+$gradientRock: (
+    from: hsl(349, 71%, 52%), 
+    to: hsl(349, 70%, 56%)
+);
+
+// - Lizard Gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%)
+// - Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%)
+
+
+
+$colorsScore: (
+    points: hsl(229, 25%, 31%),
+    text: hsl(229, 64%, 46%)
+);
+
+$headerOutline: hsl(217, 16%, 45%);
+
+$gradientBackground: (
+    from: hsl(214, 47%, 23%),
+    to: hsl(237, 49%, 15%)
+);
+
+$fontBarlow: 'Barlow Semi Condensed', sans-serif;
+
+$fontWeights: (
+    normail: 600,
+    bolder: 700
+)
