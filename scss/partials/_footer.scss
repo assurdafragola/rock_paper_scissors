@@ -1,10 +1,10 @@
 .footer {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
 
     box-sizing: border-box;
-    padding: 0 5vw;
     width: 100%;
 
     .footer_rules {
@@ -18,5 +18,9 @@
         font-size: 20px;
         letter-spacing: 3px;
         color: white;
+
+        position: fixed;
+        bottom: 5vh;
+        right: 5vh;
     }
 }

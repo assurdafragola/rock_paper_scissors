@@ -35,29 +35,86 @@
     <section class="game">
 
 
-      <div class="game_step1">
+      <div class="game_step1 hidden">
 
         <img class="game_step1_triangle" src="images/bg-triangle.svg" alt="triangle">
 
-        <div class="game_step1_option paper pointer">
+        <div class="game_option paper pointer">
           <div>
             <img src="images/icon-paper.svg" alt="Paper">
           </div>
         </div>
-        <div class="game_step1_option rock pointer">
+        <div class="game_option rock pointer">
           <div>
             <img src="images/icon-rock.svg" alt="Rock">
           </div>
         </div>
-        <div class="game_step1_option scissors pointer">
+        <div class="game_option scissors pointer">
           <div>
             <img src="images/icon-scissors.svg" alt="Scissors">
           </div>
         </div>
 
       </div>
-      <!-- You Picked
-      The House Picked
+
+
+      <div class="game_choice">
+
+        <div class="game_choice_user">
+          <div class="game_header">
+            You Picked
+          </div>
+          <div class="game_option paper pointer hidden">
+            <div>
+              <img src="images/icon-paper.svg" alt="Paper">
+            </div>
+          </div>
+          <div class="game_option rock pointer ">
+            <div>
+              <img src="images/icon-rock.svg" alt="Rock">
+            </div>
+          </div>
+          <div class="game_option scissors pointer hidden">
+            <div>
+              <img src="images/icon-scissors.svg" alt="Scissors">
+            </div>
+          </div>
+        </div>
+
+        <div class="game_result hidden">
+          <div class="game_result_text">YOU LOSE</div>
+          <button class="game_result_btn pointer">PLAY AGAIN</button>
+        </div>
+
+        <div class="game_choice_computer">
+          <div class="game_header">
+            The House Picked
+          </div>
+          <div class="game_option placeholder">
+            <div>
+            </div>
+          </div>
+          <div class="game_option paper pointer hidden">
+            <div>
+              <img src="images/icon-paper.svg" alt="Paper">
+            </div>
+          </div>
+          <div class="game_option rock pointer hidden">
+            <div>
+              <img src="images/icon-rock.svg" alt="Rock">
+            </div>
+          </div>
+          <div class="game_option scissors pointer hidden">
+            <div>
+              <img src="images/icon-scissors.svg" alt="Scissors">
+            </div>
+          </div>
+        </div>  
+
+      </div>
+
+      <!-- 
+      
     
       You Win
       You Lose

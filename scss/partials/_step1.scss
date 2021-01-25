@@ -1,8 +1,7 @@
 .game {
     width: 80%;
-    height: auto;
-    max-width: $widthDesktop - 470px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -14,16 +13,18 @@
     justify-content: center;
     align-items: center;
     margin-top: 140px;
-    margin-bottom: 80px;
-    width: 45%;
+    margin-bottom: 140px;
+    width: 28%;
     .game_step1_triangle {
         width: 100%;
         height: 350px;
         position: relative;
     }
 
-    .game_step1_option {
+    .game_option {        
         position: absolute;
+        width: 250px;
+        height: 250px;
     }
 
     .paper {
@@ -40,17 +41,15 @@
 
     .rock {
         bottom: 0;
-        left: 0;
-        transform: translate(30%, 30%);
+        left: 21%;
+        transform: translate(0, 35%);
     }
 
 }
 
 
-.game_step1_option {
+.game_option {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,17 +69,96 @@
     }
 }
 
-.game_step1_option.paper {
+.game_option.paper {
     background-image: linear-gradient(map-get($gradientPaper, from), map-get($gradientPaper, to));
     box-shadow: 0 12px 0 darken(map-get($gradientPaper, to), 30%);
 }
 
-.game_step1_option.rock {
+.game_option.rock {
     background-image: linear-gradient(map-get($gradientRock, from), map-get($gradientRock, to));
     box-shadow: 0 12px 0 darken(map-get($gradientRock, to), 30%);
 }
 
-.game_step1_option.scissors {
+.game_option.scissors {
     background-image: linear-gradient(map-get($gradientScissors, from), map-get($gradientScissors, to));
     box-shadow: 0 12px 0 darken(map-get($gradientScissors, to), 30%);
+}
+
+
+
+//step 2
+
+
+.game_choice {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.game_choice_user, .game_choice_computer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+
+    .game_header {
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 32px;
+        letter-spacing: 3px;
+        font-weight: map-get($fontWeights, bolder);
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 80px;
+    }
+    
+    .game_option {
+        width: 370px;
+        height: 370px;
+    }
+}
+
+
+.game_option.placeholder {
+    >div{
+        background-color: black;
+        opacity: 0.1;
+    }
+}
+
+.game_result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 100px;
+    margin: 0 50px;
+    .game_result_text {
+        text-transform: uppercase;
+        font-size: 72px;
+        font-weight: map-get($fontWeights, bolder);
+    };
+    .game_result_btn {
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        width: 280px;
+        height: 60px;
+        margin-top: 30px;
+
+        font-family: $fontBarlow;
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: map-get($colorsScore, points);
+        &:hover{
+            color: darken(red, 10%);
+        }
+       
+
+    }
 }
