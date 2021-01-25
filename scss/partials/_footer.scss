@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    box-sizing: border-box;
+    padding: 0 5vw;
+    width: 100%;
+
+    .footer_rules {
+        background: none;
+        border: 2px solid $headerOutline;
+        border-radius: 10px;
+        width: 165px;
+        height: 55px;
+
+        font-family: $fontBarlow;
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: white;
+    }
+}

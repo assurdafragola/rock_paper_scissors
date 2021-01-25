@@ -3,6 +3,8 @@
 @import 'modules/design';
 
 @import 'partials/header';
+@import 'partials/footer';
+@import 'partials/step1';
 
 .container {
     width: 100%;
@@ -17,5 +19,11 @@
 
     font-family: $fontBarlow;
     color: white;
+}
+
+.pointer {
+    &:hover {
+        cursor: pointer;
+    }
 }
 
