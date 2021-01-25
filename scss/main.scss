@@ -1,0 +1,21 @@
+@import 'reset';
+
+@import 'modules/design';
+
+@import 'partials/header';
+
+.container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+
+    background-image: radial-gradient(at top center, map-get($gradientBackground, from), map-get($gradientBackground, to));
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: $fontBarlow;
+    color: white;
+}
+

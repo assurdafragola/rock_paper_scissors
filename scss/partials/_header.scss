@@ -1,0 +1,53 @@
+.header {
+    width: 80%;
+    max-width: $widthDesktop - 470px;
+
+    margin: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 25px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 3px solid $headerOutline;
+    border-radius: 15px;
+
+    .header_name_el {
+        font-size: 52px;
+        font-weight: map-get($fontWeights, bolder );
+        line-height: 40px;
+
+        color: white;
+    }
+
+    .header_score {
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        width: 195px;
+        height: 150px;
+        max-width: 195px;
+        max-height: 145px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .header_score_text {
+            color: map-get($colorsScore, text );
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+
+        .header_score_points {
+            color: map-get($colorsScore, points);
+            font-size: 80px;
+            font-weight: map-get($fontWeights, bolder);
+        }
+    }
+}
