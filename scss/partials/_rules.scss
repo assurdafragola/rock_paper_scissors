@@ -1,0 +1,76 @@
+.rules_overlay {
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background:rgba(0,0,0,0.6);
+    z-index:1;
+    display:none;
+
+}
+
+.rules_overlay.active {
+    display: block;
+}
+
+
+
+.rules_content {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) scale(0);
+    z-index:2;
+}
+
+.rules_content.active {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+}
+
+
+.rules_content {
+    background:#fff;
+    border-radius: 10px;
+    width:510px;
+    height: 525px;
+
+    padding: 40px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    font-family: $fontBarlow;
+
+    .rules_content_header {
+        color: map-get($colorsScore, points);
+        font-weight: map-get($fontWeights, bolder);
+        font-size: 40px;
+    }
+
+    .rules_content_img {
+        width: 90%;
+        height: auto;
+        align-self: center;
+    }
+
+    .rules_content_close {
+        position: absolute;
+        top: 47px;
+        right: 40px;
+
+        background: none;
+        border: none;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+}

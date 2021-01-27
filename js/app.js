@@ -139,4 +139,15 @@ $(function(){
 
     step2.on('click', '.game_result_btn', playAgain)
 
+
+    //RULES POP UP 
+
+    const popup = () => {
+        $(".rules_content").toggleClass("active")
+        $(".rules_overlay").toggleClass("active")
+    }
+
+    $(".footer_rules").on("click", popup)
+    $(".rules_content_close").on("click", popup)
+
 })
